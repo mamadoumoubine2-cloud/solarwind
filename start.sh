@@ -1,3 +1,6 @@
 #!/bin/bash
-apt-get update && apt-get install -y telegraf
+# Installation au démarrage
+sudo apt-get update && sudo apt-get install -y telegraf
+
+# Lancement de Telegraf
 telegraf --config telegraf.conf
